@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../lib/rgb_converter'
 
-class TestRgbConverter < Minitest::Test
+class RgbConverterTest < Minitest::Test
   def setup
     @rgb_converter = RgbConverter.new
   end
