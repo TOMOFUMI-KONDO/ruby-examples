@@ -11,7 +11,3 @@ def fizz_buzz(number)
     number.to_s
   end
 end
-
-(1..100).each do |i|
-  puts fizz_buzz(i)
-end
