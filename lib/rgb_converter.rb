@@ -6,7 +6,6 @@ class RgbConverter
   end
 
   def to_ints(rgb_hex)
-    rgb = rgb_hex.scan(/\w{2}/)
-    rgb.map(&:hex)
+    rgb_hex.scan(/\w{2}/).map(&:hex)
   end
 end
