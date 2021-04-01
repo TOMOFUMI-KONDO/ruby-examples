@@ -6,6 +6,12 @@ class RgbConverter
   end
 
   def to_ints(rgb)
-    []
+    ints = []
+
+    1.step(rgb.size - 1, 2) do |i|
+      ints << rgb[i, 2].to_i(16)
+    end
+
+    ints
   end
 end
