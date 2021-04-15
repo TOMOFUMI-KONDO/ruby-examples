@@ -6,7 +6,6 @@ module DeepFreezable
         element.freeze
       end
       array_or_hash.freeze
-
     when Hash
       array_or_hash.each do |key, value|
         key.freeze
